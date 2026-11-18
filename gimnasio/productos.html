@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Gimnasio 94</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gimnasio 94</h1>
+    </header>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html" class="activo">Producto</a>
+        <a href="informacion.html">Informacion</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <section class="promocion" aria-labelledby="titulo-cotizador">
+            <h2 id="titulo-cotizador">Cotiza tu compra</h2>
+            <label for="producto">Producto</label>
+            <select id="producto">
+                <option value="">Selecciona un producto</option>
+                <option value="50">Creatina - 50</option>
+                <option value="75">Proteina - 75</option>
+                <option value="90">Preentreno - 90</option>
+                <option value="50">Creatina - 50</option>
+                <option value="75">Proteina - 75</option>
+                <option value="90">Preentreno - 90</option>
+            </select>
+            <label for="cantidad">Cantidad</label>
+            <input id="cantidad" type="number" min="1" max="20" step="1">
+            <button id="boton-promocion" type="button">Ver promoción</button>
+            <button id="calcular" type="button">Calcular</button>
+            <button id="limpiar" type="button">Limpiar</button>
+            <p id="mensaje-promocion" aria-live="polite"></p>
+            <p id="resultado" aria-live="polite"></p>
+        </section>
+        <h2>Nuestros productos</h2>
+        <div class="contenedor-productos">
+            <article class="producto">
+                <img src="imagenes/1.jpg" alt="Descripción del primer producto">
+                <h2>Creatina</h2>
+                <p>Te brinda energia y recuperacion veloz.</p>
+                <p class="precio">$50.00</p>
+                <label for="cantidad-1">Cantidad:</label>
+                <input type="number" id="cantidad-1" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-1">0.00</span></p>
+            </article>
+            <article class="producto">
+                <img src="imagenes/2.jpg" alt="Descripción del segundo producto">
+                <h2>Proteina</h2>
+                <p>Aumnetara tus fibras musculares.</p>
+                <p class="precio">$75.00</p>
+                <label for="cantidad-2">Cantidad:</label>
+                <input type="number" id="cantidad-2" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-2">0.00</span></p>
+            </article>
+            <article class="producto">
+                <img src="imagenes/3.jpg" alt="Descripción del tercer producto">
+                <h2>Preentreno</h2>
+                <p>Tendras mucha energia.</p>
+                <p class="precio">$90.00</p>
+                <label for="cantidad-3">Cantidad:</label>
+                <input type="number" id="cantidad-3" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-3">0.00</span></p>
+            </article>
+            <article class="producto">
+                <img src="imagenes/1.jpg" alt="Descripción del primer producto">
+                <h2>Creatina</h2>
+                <p>Te brinda energia y recuperacion veloz.</p>
+                <p class="precio">$50.00</p>
+                <label for="cantidad-4">Cantidad:</label>
+                <input type="number" id="cantidad-4" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-4">0.00</span></p>
+            </article>
+            <article class="producto">
+                <img src="imagenes/2.jpg" alt="Descripción del segundo producto">
+                <h2>Proteina</h2>
+                <p>Aumnetara tus fibras musculares.</p>
+                <p class="precio">$75.00</p>
+                <label for="cantidad-5">Cantidad:</label>
+                <input type="number" id="cantidad-5" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-5">0.00</span></p>
+            </article>
+            <article class="producto">
+                <img src="imagenes/3.jpg" alt="Descripción del tercer producto">
+                <h2>Preentreno</h2>
+                <p>Tendras mucha energia.</p>
+                <p class="precio">$90.00</p>
+                <label for="cantidad-6">Cantidad:</label>
+                <input type="number" id="cantidad-6" min="0" step="1" value="0">
+                <p>Subtotal: $<span id="subtotal-6">0.00</span></p>
+            </article>
+        </div>
+        <section class="resumen-compra">
+            <h2>Resumen de mi compra</h2>
+            <button type="button" id="calcular-compra">Calcular compra</button>
+            <p>Importe: $<span id="importe-compra">0.00</span></p>
+            <p>Descuento: $<span id="descuento-compra">0.00</span></p>
+            <p>Total a pagar: $<span id="total-compra">0.00</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>Gimnasio 94 - 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
